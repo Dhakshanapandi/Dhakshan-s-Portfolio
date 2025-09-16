@@ -1,0 +1,45 @@
+.about{
+    justify-content: center;
+    max-width: 50%;
+    padding: 20px;
+    margin: auto;    
+}
+.intro{
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+.history{
+    padding-top: 1em;
+    /* border-left: 1px solid #000; */
+}
+.history p{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-weight: 500;
+    margin: 0 0 0.5em;  
+}
+
+.history .title{
+    font-size: medium;
+    font-weight: 400;
+}
+
+.history a{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+.history a:hover{
+    color: var(--text-secondary);
+}
+.dates {
+    margin: 0 0 2em;
+    font-size:medium;
+    color:  var(--text-secondary);
+}
+
+@media (max-width: 768px),(max-width: 1264px){
+    .about {
+        max-width: 100%; 
+    }
+}
