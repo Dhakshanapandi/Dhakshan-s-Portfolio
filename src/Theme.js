@@ -9,7 +9,7 @@ const getTheme = () => {
 
   if (!theme) {
     localStorage.setItem("theme", "dark");
-    return "light";
+    return "dark";
   } else return theme;
 };
 
