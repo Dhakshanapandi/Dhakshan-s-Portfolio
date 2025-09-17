@@ -4,7 +4,7 @@ import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 function Footer(){
     return(
         <div style={{margin:"2em"}}>
-            <p style={{textAlign:"center"}}>Crafted with passion by Dhakshanapandi <FontAwesomeIcon icon={faCopyright} /> 2025</p>
+            <p style={{textAlign:"center"}}>Crafted with passion by Dhakshan <FontAwesomeIcon icon={faCopyright} /> 2025</p>
         </div>
     );
 }

@@ -5,6 +5,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
+import resume from "../assets/Resume.pdf"
 
 const hvariant = {
   hidden: { opacity: 0, y: 75 },
@@ -17,7 +18,7 @@ function Resume() {
       {/* Header with animation */}
       <motion.div className='header' initial="hidden" animate="visible" variants={hvariant}>
         <h2>My Resume</h2>
-        <a href={"/Resume.pdf"} download>
+        <a href={resume} download>
           <button className="download-btn">
             Download <FontAwesomeIcon icon={faDownload} className='icon' />
           </button>

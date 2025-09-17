@@ -35,7 +35,7 @@ function Projects() {
         {/* Smart Billing System */}
         <motion.div className="project" variants={h2variant}>
           <a href="https://smart-billing-system.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <h2>Smart Billing System</h2>
+            <h2 style={{ color: '#1e90ff' }}>Smart Billing System</h2>
           </a>
           <p><FontAwesomeIcon icon={faCircleInfo} className="icon"/>
             A full-stack billing system with invoice generation, dashboards, analytics, and secure authentication.
@@ -58,7 +58,9 @@ function Projects() {
 
         {/* Casino Dashboard */}
         <motion.div className="project" variants={h2variant}>
-          <a href="#" target="_blank" rel="noopener noreferrer"><h2>Casino Dashboard</h2></a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <h2 style={{ color: '#1e90ff' }}>Casino Dashboard</h2>
+          </a>
           <p><FontAwesomeIcon icon={faCircleInfo} className="icon" />
             An interactive casino dashboard with analytics and real-time tracking.
           </p>
@@ -76,7 +78,9 @@ function Projects() {
 
         {/* MERN Auth System */}
         <motion.div className="project" variants={h2variant}>
-          <a href="#" target="_blank" rel="noopener noreferrer"><h2>MERN Auth System</h2></a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <h2 style={{ color: '#1e90ff' }}>MERN Auth System</h2>
+          </a>
           <p><FontAwesomeIcon icon={faCircleInfo} className="icon" />
             A secure authentication system with JWT-based login, signup, and password recovery features.  
             Built for modern web applications requiring robust user management.
@@ -95,7 +99,9 @@ function Projects() {
 
         {/* Indian Stock Market Average Calculator */}
         <motion.div className="project" variants={h2variant}>
-          <a href="#" target="_blank" rel="noopener noreferrer"><h2>Indian Stock Market Average Calculator</h2></a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <h2 style={{ color: '#1e90ff' }}>Indian Stock Market Average Calculator</h2>
+          </a>
           <p><FontAwesomeIcon icon={faCircleInfo} className="icon" />
             A stock market utility tool to calculate the average buying price of multiple stock entries.  
             Helps investors quickly track and manage average costs for better decision-making.

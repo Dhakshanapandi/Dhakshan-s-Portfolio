@@ -75,7 +75,7 @@ function About() {
           transition={{
             repeat: Infinity,
             repeatType: "loop",
-            duration: 8,
+            duration: 15,
             ease: "linear"
           }}
         >

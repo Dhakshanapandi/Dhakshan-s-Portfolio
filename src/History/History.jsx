@@ -1,44 +1,44 @@
 import './History.css'
 import React from "react";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const historySecVar = {
-    hidden : {opacity:0},
-    show : {
-        opacity:1,
-        transition :{
-            staggerChildren : 0.5,
-            delay:0.2
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.5,
+            delay: 0.2
         }
     },
 }
 
 const h2variant = {
-    hidden:{opacity:0, y:75},
-    visible:{opacity:1, y:0, ease:"easeOut"}
-} 
+    hidden: { opacity: 0, y: 75 },
+    visible: { opacity: 1, y: 0, ease: "easeOut" }
+}
 
 const pvariant = {
-    hidden:{opacity:0, x:-100},
-    show:{opacity:1, x:0, ease:"easeOut"}
-} 
+    hidden: { opacity: 0, x: -100 },
+    show: { opacity: 1, x: 0, ease: "easeOut" }
+}
 
-function History(){
-    return(
+function History() {
+    return (
         <div className="about">
-            <motion.h2 
-                className='intro' 
-                initial="hidden" 
-                animate="visible" 
+            <motion.h2
+                className='intro'
+                initial="hidden"
+                animate="visible"
                 variants={h2variant}
             >
                 A brief about my life in education & work.
             </motion.h2>
 
-            <motion.section 
-                variants={historySecVar} 
-                initial="hidden" 
-                animate="show" 
+            <motion.section
+                variants={historySecVar}
+                initial="hidden"
+                animate="show"
                 className="history"
             >
                 <motion.p variants={pvariant}>
@@ -64,12 +64,12 @@ function History(){
                     <p className='title'>Self-Learning</p>
                     <span className='dates'>2022</span>
                 </motion.p>
+
                 <motion.p variants={pvariant}>
                     HSC
                     <p className='title'>Higher Secondary Education</p>
                     <span className='dates'>2022</span>
                 </motion.p>
-
 
                 <motion.p variants={pvariant}>
                     SSLC

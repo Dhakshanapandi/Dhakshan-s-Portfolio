@@ -1,45 +1,63 @@
-.about{
+.about {
     justify-content: center;
     max-width: 50%;
-    padding: 20px;
+    padding: 30px; /* Increased padding */
     margin: auto;    
 }
-.intro{
+
+.intro {
     font-weight: 600;
-    padding-bottom: 1em;
-}
-.history{
-    padding-top: 1em;
-    /* border-left: 1px solid #000; */
-}
-.history p{
-    display: flex;
-    flex-direction: column;
-    font-size: large;
-    font-weight: 500;
-    margin: 0 0 0.5em;  
+    padding-bottom: 1.5em; /* Slightly more space below heading */
+    font-size: 1.75rem; /* Increased heading size */
 }
 
-.history .title{
-    font-size: medium;
+.history {
+    padding-top: 1.5em; /* Slightly more space above history section */
+    /* border-left: 1px solid #000; */
+}
+
+.history p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem; /* Bigger base text */
+    font-weight: 500;
+    margin: 0 0 1em; /* More spacing between entries */
+}
+
+.history .title {
+    font-size: 1rem; /* Slightly bigger subtitle */
     font-weight: 400;
 }
 
-.history a{
+.history a {
     text-decoration: none;
     color: var(--text-primary);
 }
-.history a:hover{
+
+.history a:hover {
     color: var(--text-secondary);
 }
+
 .dates {
     margin: 0 0 2em;
-    font-size:medium;
-    color:  var(--text-secondary);
+    font-size: 1rem; /* Bigger date text */
+    color: var(--text-secondary);
 }
 
-@media (max-width: 768px),(max-width: 1264px){
+@media (max-width: 768px), (max-width: 1264px) {
     .about {
-        max-width: 100%; 
+        max-width: 100%;
+    }
+    .intro {
+        font-size: 1.5rem; /* Adjust for smaller screens */
+    }
+    .history p {
+        font-size: 1.1rem;
+    }
+    .history .title {
+        font-size: 0.95rem;
+    }
+    .dates {
+        font-size: 0.9rem;
     }
 }
