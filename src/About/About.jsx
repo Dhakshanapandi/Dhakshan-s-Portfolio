@@ -1,5 +1,5 @@
 import "./About.css";
-import developer from "../assets/developer.png"; // ✅ replaced tulip with developer illustration
+import developer from "../assets/developer.png";
 import React from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +9,8 @@ import {
   faJs,
   faGitAlt,
   faGithub,
-  faPython
+  faPython,
+  faCloudflare
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,11 +20,12 @@ const skills = [
   { name: "Express", icon: faNodeJs },
   { name: "MongoDB", icon: faDatabase },
   { name: "Python", icon: faPython },
-  { name: "C++", icon: faLaptopCode },
+  { name: "Problem_Solving", icon: faLaptopCode },
   { name: "JavaScript", icon: faJs },
   { name: "Git", icon: faGitAlt },
   { name: "GitHub", icon: faGithub },
   { name: "MySQL", icon: faDatabase },
+  { name: "Cloud_Computing", icon: faCloudflare },
 ];
 
 const h2variant = {
@@ -68,26 +70,15 @@ function About() {
           <img src={developer} alt="developer-illustration" />
         </motion.div>
       </div>
-      <div>
-        <motion.div
-          className="skills-marquee"
-          animate={{ x: ["5%", "-100%"] }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 15,
-            ease: "linear"
-          }}
-        >
-          <div className="skills-wrapper">
-            {skills.concat(skills).map((skill, index) => (
-              <span key={index} className="skill-item">
-                <FontAwesomeIcon icon={skill.icon} className="skill-icon" />{" "}
-                {skill.name}
-              </span>
-            ))}
-          </div>
-        </motion.div>
+
+      {/* ✅ Static 2-row skill grid */}
+      <div className="skills-grid">
+        {skills.map((skill, index) => (
+          <span key={index} className="skill-item">
+            <FontAwesomeIcon icon={skill.icon} className="skill-icon" />{" "}
+            {skill.name}
+          </span>
+        ))}
       </div>
     </div>
   );
